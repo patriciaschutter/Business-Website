@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="cake&co.css">
+
+	<style type="text/css">
+		form{
+			margin:0 auto;
+			margin-top: 200px;
+			width: 500px;
+			background-color: #ebd392;
+			padding: 20px;
+			border: 2px solid black;
+		}
+	textarea{
+		resize: none;
+		width: 200px;
+		border: 1px solid black;
+	}
+	.textinput{
+		border: 1px solid black;
+		width: 200px;
+	}
+	h3{
+		text-align: center;
+	}
+	select{
+		width: 205px;
+	}
+	.submitbutton{
+		width: 200px;
+		cursor: pointer;
+	}
+	.submitbutton:hover{
+		background-color:#607d8b;
+		transition: all 0.40s;
+	}
+	#search{
+		width: 200px;
+		padding: 7px;
+		border: 1px solid #607d8b;
+	}
+	#submit{
+
+		padding: 7px;
+		margin:-5px;
+		border: 1px solid #607d8b;
+		cursor: pointer;
+	}
+
+	#submit:hover{
+		background-color: #607d8b;
+		transition: all 0.40s
+	}
+
+
+	</style>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+
+	<title>Order</title>
+</head>
+<body>
+	<nav>
+		<h3>
+			<ul>
+				<li class="tabs"><a href="homepage.html">HOME/LOGO</a></li>
+				<li class="tabs"><a href="aboutus.html">ABOUT US</a></li>
+				<li class="tabs"><a href="portfolio.html">PORTFOLIO</a></li>
+				<li class="tabs"><a href="orderlist.html">ORDER</a></li>
+			</ul>
+		</h3>
+	</nav>
+
+	<form>
+	
+		
+		<h3 id="welcome">Order Your Cake</h3><hr>
+
+		<table>
+			<tr>
+				<td><label for="user">Name:</label></td>
+				<td "> <input class="textinput type="text" id="user" name="user"></td>
+
+			</tr>
+
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td > <input class="textinput" type="text" id="email" name="email"></td>
+
+			</tr>
+			<tr>
+				<td><label for="Cake">Select your cake:</label></td>
+				<td>
+					<select name="cakesort">
+					<option>ApplePie</option>
+					<option>Hazelnut</option>
+					<option>AppleCrumble</option>
+					<option>IceCake</option></td>
+					</select>
+			</tr>
+
+			<tr>
+				<td><label for="size">Select your size:</label></td>
+				<td>
+					<select name="size">
+					<option>26 cm</option>
+					<option>30 cm</option>
+					<option>34 cm</option>
+					
+					</select>
+			</tr>
+			<tr>
+				<td><label for="form">Select your form:</label></td>
+				<td>
+					<select name="size">
+					<option>circle</option>
+					<option>square</option>
+					<option>triangle</option>
+					
+					</select>
+			</tr>
+			<tr>
+				<td><label for="layers">Select amount of layers</label></td>
+				<td>
+					<select name="layers">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					</select>
+			</tr>
+			
+			<tr>
+				<td><label>Wrapped:</label></td>
+				<td>yes <input type="radio" name="Wrapped"> no <input type="radio" name="Wrapped"> 
+
+			</tr>
+			
+			<tr>
+			<td><label for="Extra Info" >Extra Info:</label></td>
+			<td><textarea id="textarea_01" rows="5" cols="30"></textarea></td>
+			</tr>
+
+
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+
+		</table>
+
+
+
+	</form>
+	<button id="submit_01" class="submitbutton" type="" value="click to submit" name="submit_form">hhh</button>	
+
+	<form action="https://www.google.com">
+		<input type="text" placeholder="Search.." maxlength="20" id="search" name="">
+		<input type="submit" id=submit value="Go" name="">
+
+
+	</form>
+
+
+	<script type="text/javascript">
+	    $( document ).ready(function(){
+     
+	     $("#submit_01").click(function(){
+
+	     	var user = $("#user").val()
+	     	var email = $("#email").val()
+	     	var textarea_01 = $("#textarea_01").val()
+	     	if (user.length>0&&email.length>0){$("#welcome").html("thank you for your order")}
+	     	else{$("#welcome").html("you missed a thingie")}
+	        
+
+	    //     console.log("submit reached")
+	        
+	    //     var x = document.getElementsByTagName("input")[0].value
+	    //     console.log(x)
+	        
+	    //     if (x === "bacon"){
+	    //         document.getElementById("welcome").innerHTML = "Thank you for your order"
+	    //     }
+	    //     else{
+	    //         document.getElementById("welcome").innerHTML = "you havent filled the complete form"
+	    //     }
+	    });
+   
+    })
+	</script>
+
+
+
+</body>
+</html>
