@@ -1,0 +1,174 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	height: 45px;
+	width: 100%;
+	position: fixed;
+	background-color: #f16969;
+	float: left;
+
+}
+
+a{
+	border-right: solid 2px blue;
+}
+
+
+/* HOME PAGE */
+#divindexslideshow{
+	text-align: center;
+	vertical-align: center;
+
+}
+
+.indexslideshow{
+	width: 800px;
+	height: 500px;
+	margin: 150px auto;
+}
+
+/* PORTFOLIO PAGE */
+.galery1, .galery2{
+	width: 800px;
+	height: 500px;
+	margin: 150px auto;
+}
+
+.containerGalery1, .containerGalery2{
+	text-align: center;
+	display: inline-block;
+    border: 2px solid black;
+}
+
+.buttonLeft{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+
+.buttonRight{
+	position: absolute;
+	top: 50%;
+	right: 9%;
+	transform: translate(0%,-50%);
+}
+
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+w3.css:99
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+w3.css:41
+.w3-btn, .w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+}
+/*w3.css:15
+button, select {
+    text-transform: none;
+}
+w3.css:15
+button, input {
+    overflow: visible;
+}
+w3.css:14
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+w3.css:2
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*/
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 11px system-ui;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+user agent stylesheet
+button {
+    -webkit-appearance: button;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
