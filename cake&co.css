@@ -14,7 +14,7 @@ ul {
     top: 0px;
     position: fixed;
     width: 100%;
-    background-color: #333;
+    background-color: #c9c9ff;
 }
 
 li {
@@ -27,11 +27,12 @@ li a {
      area clickable (not just the text), and it allows us to specify padding 
      (and height, width, margins, etc. if you want)*/
     display: block;
-    color: white;
+    color: #8a8484;
     text-align: center;
-    padding: 12px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     border: 1px solid #8a8484;
+    height: 25px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -47,28 +48,42 @@ a:hover { text-decoration: none; }
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 */
+.logo{
+    height: auto;
+    width: 75px;
+}
 
-#companyName {
-    color: blue;
-    font-family: Georgia, serif;
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+h1 {
+    color: #8a8484;
+    font-family: 'Grand Hotel';
     font-size: 800%;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#homepageh3{
+    font-family: 'Grand Hotel', cursive;
+    color: #8a8484;
+    font-size: 25px;
     margin-top: 50px;
     padding-top: 0px;
+    text-align: center;
+    font-style: italic;
 }
-    margin: 0;
-
+.navBarSpacing{
+    height: 20px;
+}
 /* HOME PAGE */
 
 #divindexslideshow{
 	text-align: center;
-	vertical-align: center;
-
 }
 
 .indexslideshow{
-	width: 800px;
+	width: 900px;
 	height: 500px;
-	margin: 150px auto;
+	margin: 0 auto;
 }
 
 /* PORTFOLIO PAGE */
