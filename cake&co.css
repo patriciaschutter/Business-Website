@@ -50,12 +50,17 @@ body{
     margin: 0px;
 }
 
+
 /*NAVIGATION BAR*/
+
+a {
+    border-right: solid 2px blue;
+}
 
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     top: 0px;
     position: fixed;
     width: 100%;
@@ -64,25 +69,22 @@ ul {
 
 li {
     float: left;    
+    border-right: 1px solid #5d5d61;
 }
 
 li a {
     /*display: block; - Displaying the links as block elements makes the whole link
-    area clickable (not just the text), and it allows us to specify padding 
-    (and height, width, margins, etc. if you want)*/
+     area clickable (not just the text), and it allows us to specify padding 
+     (and height, width, margins, etc. if you want)*/
     display: block;
     color: #8a8484;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    border-right: 1px solid #8a8484;
-    border-bottom: 1px solid #8a8484;
-    border-top: 1px solid #8a8484;
+    border: 1px solid #8a8484;
     height: 25px;
-    font-size: 200%;
 }
 
-<<<<<<< HEAD
 
 li a:hover {
     background-color: #9696EB;
@@ -95,8 +97,6 @@ li a:hover {
 a {
     text-decoration: none; color:black; }
 a:visited { text-decoration: none; }
-
-
 /*LOGO*/
 
 .logo{
@@ -168,7 +168,7 @@ div p {
 /*HEADER*/
 
 @import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
-.headerHomePage {
+h1 {
     color: #8a8484;
     font-family: 'Grand Hotel';
     font-size: 700%;
@@ -179,29 +179,22 @@ div p {
 }
 
 /* HOME PAGE */
-
-
-
 #homepageh3{
     font-family: 'Grand Hotel', cursive;
-    width: 600px;
-    margin: 0 auto;
     color: #8a8484;
     font-size: 25px;
     margin: 0;
     padding-top: 0px;
-    padding-bottom: 30px;
     text-align: center;
     font-style: italic;
 }
 .navBarSpacing{
-    height: 60px;
+    height: 20px;
 }
 
 
 #divindexslideshow{
-	text-align: center;
-    
+    text-align: center;
 }
 
 .indexslideshow{
@@ -247,5 +240,110 @@ div p {
     margin-bottom: 0px;
     font-size: 20px;
 }
+
+/*ORDERLIST CSS*/
+
+form{
+            margin: 100px auto;
+            
+            width: 500px;
+            height: 550px;
+            background-color: #c9c9ff;
+            padding: 20px;
+            border: 4px solid #cecbcb ;
+            
+            color: #8a8484
+
+        }
+    textarea{
+        resize: none;
+        margin: 10px;
+        width: 200px;
+        border: 1px solid #d8d8d8;
+    }
+    textarea:hover{
+        background-color: #d8d8d8;
+        border-color: black;
+        transition: all 0.40s;
+    }
+    .textinput{
+        border: 1px solid #d8d8d8;
+        margin: 10px;
+        width: 205px;
+    }
+
+    .textinput:hover{
+        background-color: #d8d8d8;
+        border-color: black;
+        transition: all 0.40s;
+    }
+    h3{
+        text-align: center;
+    }
+    select{
+        width: 205px;
+        margin: 10px;
+        border: #d8d8d8;
+
+
+    }
+    select:hover{
+        background-color: #d8d8d8;
+        border: solid 1px black;
+        transition: all 0.40s;
+        color: #8a8484;
+    }
+
+    select{
+        color: #8a8484;
+    }
+
+    #radio{
+        margin: 10px;
+    }
+    .radio{
+        text-align: left;
+        padding-left: 10px;
+        
+    }
+
+    .submitbutton{
+        width: 205px;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #8a8484;
+
+    }
+    .submitbutton:hover{
+        background-color:#d8d8d8;
+        border: solid 1px black;
+        transition: all 0.40s;
+        color: #8a8484;
+    }
+    #search{
+        width: 300px;
+        padding: 7px;
+        border: 1px solid #607d8b;
+    }
+    #submit{
+
+        padding: 7px;
+        margin:-5px;
+        border: 1px solid #607d8b;
+        cursor: pointer;
+    }
+
+    #submit:hover{
+        background-color: #607d8b;
+        transition: all 0.40s
+    }
+
+    .bodyOrderlist{
+        background-image:url("images/homepage/slide3.jpg");
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
 
 
