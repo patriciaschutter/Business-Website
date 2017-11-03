@@ -3,6 +3,8 @@ body{
     margin: 0px;
 }
 
+/*NAVIGATION BAR*/
+
 ul {
     list-style-type: none;
     margin: 0px;
@@ -15,42 +17,80 @@ ul {
 
 li {
     float: left;    
-    border-right: 1px solid #bbb;
 }
 
 li a {
     /*display: block; - Displaying the links as block elements makes the whole link
-     area clickable (not just the text), and it allows us to specify padding 
-     (and height, width, margins, etc. if you want)*/
+    area clickable (not just the text), and it allows us to specify padding 
+    (and height, width, margins, etc. if you want)*/
     display: block;
     color: #8a8484;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    border: 1px solid #8a8484;
+    border-right: 1px solid #8a8484;
+    border-bottom: 1px solid #8a8484;
+    border-top: 1px solid #8a8484;
     height: 25px;
+    font-size: 200%;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
-    text-decoration: underline;
+    background-color: #e6e6fd;
+    text-decoration: none;
 }
 
 a {text-decoration: none; color:black; }
 a:visited { text-decoration: none; }
-/* Pulled from internet; not required?
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
-*/
+
+/*LOGO*/
+
 .logo{
     height: auto;
     width: 75px;
 }
 
+/*ABOUT US*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 60px;
+}
+
+.container div {
+    float:left;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 600px;
+    height: 400px;
+/*    border: black solid 2px;*/
+}
+
+.aboutUsImage {
+    width: 600px;
+    height: 400px;
+}
+
+div p {
+    margin-top: 0px;
+}
+
+.AboutUsAndPortfolio {
+    color: #8a8484;
+    font-family: 'Grand Hotel';
+    font-size: 800%;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*HEADER*/
+
 @import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
-h1 {
+.headerHomePage {
     color: #8a8484;
     font-family: 'Grand Hotel';
     font-size: 800%;
@@ -58,17 +98,21 @@ h1 {
     text-align: center;
     margin-bottom: 0;
 }
+
 #homepageh3{
     font-family: 'Grand Hotel', cursive;
+    width: 600px;
+    margin: 0 auto;
     color: #8a8484;
     font-size: 25px;
     margin-top: 50px;
     padding-top: 0px;
+    padding-bottom: 30px;
     text-align: center;
     font-style: italic;
 }
 .navBarSpacing{
-    height: 200px;
+    height: 60px;
 }
 /* HOME PAGE */
 
