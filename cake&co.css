@@ -67,7 +67,55 @@ a:visited { text-decoration: none; }
     height: auto;
     width: 75px;
 }
+/*HEADER*/
 
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+h1 {
+    color: #8a8484;
+    font-family: 'Grand Hotel';
+    font-size: 700%;
+    padding: 0;
+    text-align: center;
+    margin: 30px, auto;
+    
+}
+
+/* HOME PAGE */
+#homepageh3{
+    font-family: 'Grand Hotel', cursive;
+    color: #8a8484;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 0px;
+    text-align: center;
+    font-style: italic;
+}
+.navBarSpacing{
+    height: 20px;
+}
+
+
+#divindexslideshow{
+    text-align: center;
+}
+
+.indexslideshow{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.paragraphtext{
+    font-family: 'Grand Hotel', cursive;
+    color: #8a8484;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0px;
+    text-align: center;
+    font-style: italic;
+}
 /*ABOUT US*/
 
 .container {
@@ -138,44 +186,7 @@ div p {
     margin-bottom: 30px;
 }
 
-/*HEADER*/
 
-@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
-h1 {
-    color: #8a8484;
-    font-family: 'Grand Hotel';
-    font-size: 700%;
-    padding: 0;
-    text-align: center;
-    margin: 30px, auto;
-    
-}
-
-/* HOME PAGE */
-#homepageh3{
-    font-family: 'Grand Hotel', cursive;
-    color: #8a8484;
-    font-size: 25px;
-    margin: 0;
-    padding-top: 0px;
-    text-align: center;
-    font-style: italic;
-}
-.navBarSpacing{
-    height: 20px;
-}
-
-
-#divindexslideshow{
-    text-align: center;
-}
-
-.indexslideshow{
-	width: 800px;
-	height: 400px;
-	margin: 0 auto;
-
-}
 
 /* PORTFOLIO PAGE */
 
@@ -201,8 +212,8 @@ h1 {
     
 }
 .galery1, .galery2, .galery3 {
-	width: 1000px;
-	height: 500px;
+	width: 700px;
+	height: 350px;
 	margin: 5px  auto;
 
 }
@@ -215,17 +226,14 @@ h1 {
 }
 
 /*ORDERLIST CSS*/
-
-form{
-            margin: 100px auto;
-            
-            width: 500px;
-            height: 550px;
-            background-color: #c9c9ff;
-            padding: 20px;
-            border: 4px solid #cecbcb ;
-            
-            color: #8a8484
+    form{
+        margin: 100px auto;
+        width: 500px;
+        height: 550px;
+        background-color: #c9c9ff;
+        padding: 20px;
+        border: 4px solid #cecbcb ;
+        color: #8a8484
 
         }
     textarea{
@@ -318,26 +326,154 @@ form{
         height: auto;
         
     }
-@media (max-width: 400px){ 
-    h1{
-        text-align: center;
-        font-size: 10px;
-        
-    }
-    body {
-        background-color: red;
-    }
-    #homepageh3{
-        text-align: center;
-        width: 375px;
+
+/* MEDIA QUERIES*/
+/* IPAD */
+@media (max-width: 1025px){ 
+    h1 {
+        font-size: 100px;
     }
 
     .indexslideshow{
-    max-width: 375px;
-    height: 50px;
+    width: 80vw;
+    height: 30vh;
     margin: 0 auto;
     }
 
+    .galery1, .galery2, .galery3,.style {
+    width: 80vw;
+    height: 40vh;
+    margin: 5px  auto;
+
+}
+
+    form {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 10vh;
+        height: 50vh;
+        width: 70vw;
+        background-color: rgba(201, 201, 255, 0.84);
+    }
+
+    textarea{
+        margin: 0px;
+        width: 30vw;
+    }
+    
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+    
+    select{
+        width: 30vw;
+        margin: 0px;
+        }
+    #radio{
+        margin: 0px;
+    }
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+    }
+}
+
+/* IPHONE 6 PLUS */
+@media (max-width: 421px){ 
+    nav{
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        width: 100vw;
+        margin: 0px;
+    }
+    li {
+    font-size: 14px;
+    float: left;    
+    border-right: 1px solid #5d5d61;
+    margin: 0px;
+    }
+
+    li a{
+        height: 15px;
+    }
+
+    .logo{
+        height: auto;
+        width: 70px;
+        margin: auto auto;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    #homepageh3{
+        font-size: 15px;
+    }
+
+    .indexslideshow{
+    width: 80vw;
+    height: 30vh;
+    margin: 0 auto;
+    }
+
+    .paragraphtext{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .portfolioParagraph{
+    font-size: 12px;
+    }
+
+    .galery1, .galery2, .galery3,.style {
+    width: 80vw;
+    height: 25vh;
+    margin: 5px  auto;
+    }
+
+    form {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+        height: 60vh;
+        width: 80vw;
+        background-color: rgba(201, 201, 255, 0.84);
+    }
+
+    textarea{
+        resize: none;
+        margin: 0px;
+        width: 30vw;
+    }
+  
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+
+    #radio{
+        margin: 0px;
+    }
+
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+    }
+
+}
+
+/* IPHONE 6 */
+@media (max-width: 380px){ 
     nav{
         width: 100vw;
         margin: 0px;
@@ -345,17 +481,147 @@ form{
     }
 
     li {
-    font-size: 10.5px;
+    font-size: 10px;
     float: left;    
     border-right: 1px solid #5d5d61;
     margin: 0px;
+
     }
 
-
-/*bestelformulier*/
-    form{
-        height: 667px;
-        width: 40%%;
+    h1 {
+        font-size: 55px;
     }
+
+    #homepageh3{
+        font-size: 15px;
+    }
+
+    .indexslideshow{
+    width: 50vh;
+    height: 25vh;
+    margin: 0 auto;
+    }
+
+    .paragraphtext{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .portfolioParagraph{
+        font-size: 10px;
+    }
+
+    form {
+        margin-left: 4vw;
+        margin-right: 0vw;
+        margin-top: 10vh;
+        height: 70vh;
+        width: 80vw;
+        background-color: rgba(201, 201, 255, 0.84);
+    }
+ textarea{
+        margin: 0px;
+        width: 30vw;
+        border: 1px solid #d8d8d8;
+    }
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+    #radio{
+        margin: 0px;
+    }
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+     }
+ 
 }
+/*IPHONE 5*/
+@media (max-width: 321px){ 
+    nav{
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        font-size: 9px;
+        float: left;    
+        border-right: 1px solid #5d5d61;
+        margin: 0px;
+
+    }
+    
+    .logo{
+        height: auto;
+        width: 50px;
+        margin: auto auto;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    #homepageh3{
+        font-size: 15px;
+    }
+
+    .indexslideshow{
+    width: 50vh;
+    height: 25vh;
+    margin: 0 auto;
+    }
+
+    .paragraphtext{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .portfolioParagraph{
+        font-size: 10px;
+    }
+
+    .galery1, .galery2, .galery3,.style {
+    width: 90vw;
+    height: 25vh;
+    margin: 5px  auto;
+    }
+
+    form {
+        margin-top: 8vh;
+        margin-left: 3vw;
+        height: 70vh;
+        width: 80vw;
+        background-color: rgba(201, 201, 255, 0.84);
+    }
+    textarea{
+        margin: 0px;
+        width: 30vw;
+     }
+ 
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+    #radio{
+        margin: 0px;
+    }
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+    }
+    
+}
+
+
+
 
