@@ -1,4 +1,4 @@
-/* MOBILE VERSION */
+x/* MOBILE VERSION */
 
 
 /* Medium devices (Iphone 6, 375px ) */
@@ -162,7 +162,7 @@ h1 {
     font-style: italic;
 }
 .navBarSpacing{
-    height: 20px;
+    height: 0.3vh;
 }
 
 
@@ -217,49 +217,45 @@ h1 {
 /*ORDERLIST CSS*/
 
 form{
-            margin: 100px auto;
-            
-            width: 500px;
-            height: 550px;
-            background-color: #c9c9ff;
-            padding: 20px;
-            border: 4px solid #cecbcb ;
-            
-            color: #8a8484
+    margin: 100px auto;
+    width: 500px;
+    height: 550px;
+    background-color: #c9c9ff;
+    padding: 20px;
+    border: 4px solid #cecbcb ;
+    color: #8a8484
+}
+textarea{
+    resize: none;
+    margin: 10px;
+    width: 200px;
+    border: 1px solid #d8d8d8;
+}
 
-        }
-    textarea{
-        resize: none;
-        margin: 10px;
-        width: 200px;
-        border: 1px solid #d8d8d8;
-    }
-    textarea:hover{
-        background-color: #d8d8d8;
-        border-color: black;
-        transition: all 0.40s;
-    }
-    .textinput{
-        border: 1px solid #d8d8d8;
-        margin: 10px;
-        width: 205px;
-    }
+textarea:hover{
+    background-color: #d8d8d8;
+    border-color: black;
+    transition: all 0.40s;
+}
+.textinput{
+    border: 1px solid #d8d8d8;
+    margin: 10px;
+    width: 205px;
+}
 
-    .textinput:hover{
-        background-color: #d8d8d8;
-        border-color: black;
-        transition: all 0.40s;
-    }
-    h3{
-        text-align: center;
-    }
-    select{
-        width: 205px;
-        margin: 10px;
-        border: #d8d8d8;
-
-
-    }
+.textinput:hover{
+    background-color: #d8d8d8;
+    border-color: black;
+    transition: all 0.40s;
+}
+h3{
+    text-align: center;
+}
+select{
+    width: 205px;
+    margin: 10px;
+    border: #d8d8d8;
+}
     select:hover{
         background-color: #d8d8d8;
         border: solid 1px black;
@@ -299,7 +295,7 @@ form{
         padding: 7px;
         border: 1px solid #607d8b;
     }
-    #submit{
+   /* #submit{
 
         padding: 7px;
         margin:-5px;
@@ -310,7 +306,7 @@ form{
     #submit:hover{
         background-color: #607d8b;
         transition: all 0.40s
-    }
+    }*/
 
     .bodyOrderlist{
         background-image:url("images/homepage/slide3.jpg");
@@ -350,12 +346,201 @@ form{
     border-right: 1px solid #5d5d61;
     margin: 0px;
     }
+}
 
 
 /*bestelformulier*/
-    form{
-        height: 667px;
-        width: 40%%;
+
+
+@media (max-width: 1025px){ 
+    form {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 10vh;
+        height: 50vh;
+        width: 70vw;
+    }
+ textarea{
+        margin: 0px;
+        width: 30vw;
+    }
+    
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+
+    
+    select{
+        width: 30vw;
+        margin: 0px;
+        }
+
+    #radio{
+        margin: 0px;
+    }
+
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
     }
 }
+
+@media (max-width: 421px){ 
+    form {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 25vh;
+        height: 60vh;
+        width: 80vw;
+    }
+ textarea{
+        resize: none;
+        margin: 0px;
+        width: 30vw;
+    }
+  
+    .textinput{
+
+        margin: 0px;
+        width: 30vw;
+    }
+
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+
+    #radio{
+        margin: 0px;
+    }
+
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+    }
+}
+
+
+
+@media (max-width: 400px){ 
+
+form {
+        margin-left: 5vw;
+        margin-right: 10vw;
+        margin-top: 15vh;
+        height: 70vh;
+        width: 70vw;
+    }
+ textarea{
+        margin: 0px;
+        width: 40vw;
+    }
+
+    .textinput{
+        margin: 0px;
+        width: 40vw;
+    }
+
+    select{
+        width: 40vw;
+        margin: 0px;
+    }
+
+    #radio{
+        margin: 0px;
+    }
+
+    .submitbutton{
+        width: 40vw;
+        margin: 0px;
+    }
+
+    /*#search{
+        width: 3;
+        padding: 7px;
+        border: 1px solid #607d8b;
+    }*/
+
+
+
+}
+
+@media (max-width: 374px){ 
+    form {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 15vh;
+        height: 70vh;
+        width: 60vw;
+    }
+ textarea{
+        margin: 0px;
+        width: 30vw;
+        border: 1px solid #d8d8d8;
+    }
+
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+
+    #radio{
+        margin: 0px;
+    }
+
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+     }
+ 
+}
+
+@media (max-width: 321px){ 
+    form {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 25vh;
+        height: 85vh;
+        width: 70vw;
+    }
+ textarea{
+        margin: 0px;
+        width: 30vw;
+     }
+ 
+    .textinput{
+        margin: 0px;
+        width: 30vw;
+    }
+
+    select{
+        width: 30vw;
+        margin: 0px;
+    }
+
+    #radio{
+        margin: 0px;
+    }
+    .submitbutton{
+        width: 30vw;
+        margin: 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
 
