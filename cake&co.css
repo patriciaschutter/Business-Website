@@ -353,6 +353,8 @@ select{
 
 
 @media (max-width: 1025px){ 
+
+   
     form {
         margin-left: 10vw;
         margin-right: 10vw;
@@ -387,6 +389,7 @@ select{
 }
 
 @media (max-width: 421px){ 
+
     form {
         margin-left: 0vw;
         margin-right: 0vw;
