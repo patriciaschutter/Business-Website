@@ -50,10 +50,10 @@
 				<td>
 					<select id="cakesort" name="cakesort">
 					<option>Select your cake</option>
-					<option>ApplePie</option>
-					<option>Hazelnut</option>
-					<option>AppleCrumble</option>
-					<option>IceCake</option></td>
+					<option class="option" value="8">ApplePie 8$</option>
+					<option class="option" value="9">Hazelnut 9$</option>
+					<option class="option" value="6">AppleCrumble 6$</option>
+					<option class="option" value="11">IceCake 11$</option></td>
 					</select>
 			</tr>
 
@@ -62,9 +62,9 @@
 				<td>
 					<select id="size" name="size">
 					<option>Select your size</option>
-					<option>26 cm</option>
-					<option>30 cm</option>
-					<option>34 cm</option>
+					<option class="option" value="0">26 cm +0$</option>
+					<option class="option" value="3">30 cm +3$</option>
+					<option class="option" value="5">34 cm +5$</option>
 					
 					</select>
 			</tr>
@@ -73,9 +73,9 @@
 				<td>
 					<select id="form" name="form">
 					<option>Select your form</option>
-					<option>circle</option>
-					<option>square</option>
-					<option>triangle</option>
+					<option class="option" value="0">circle +0$</option>
+					<option class="option" value="5">square +5$</option>
+					<option class="option" value="10">triangle +10$</option>
 					
 					</select>
 			</tr>
@@ -84,12 +84,12 @@
 				<td>
 					<select id="layers" name="layers">
 					<option>Select amount of layers</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
+					<option class="option" value="1">1 +1$</option>
+					<option class="option" value="2">2 +2$</option>
+					<option class="option" value="3">3 +3$</option>
+					<option class="option" value="4">4 +4$</option>
+					<option class="option" value="5">5 +5$</option>
+					<option class="option" value="6">6 +6$</option>
 					</select>
 			</tr>
 
@@ -105,7 +105,11 @@
 			<td><label for="textarea_01" >Extra Info:</label></td>
 			<td><textarea name="textarea_01" id="textarea_01" rows="5" cols="30"></textarea></td>
 			</tr>
-
+			
+			<tr>
+			<td><label for="total">Total:</label></td>
+			<td><div id="total" name="total">$0</div></td>	
+			</tr>
 
 			<tr>
 				<td></td>
@@ -156,8 +160,25 @@
 	     })
 	     	})
 	    	
-	   	;
+	   	</script>
+		<script type="text/javascript">
 
+
+		$(document).ready(function(){
+			$("select").change(function(){
+				
+				var total = 0;
+
+				$(".option:selected").each(function(){
+
+					total += parseInt($(this).val());
+
+				});
+
+				$("#total").html("$" + total)
+
+			});
+		});
 
 	   //	$("#welcome").html("you did not fill in your email")}
 
