@@ -414,6 +414,11 @@ div p {
     margin: 5px  auto;
 
 }
+    .block {
+        width: 80vw;
+    }
+
+
 
     form {
         margin-left: 10vw;
@@ -459,10 +464,11 @@ div p {
         margin: 0px;
     }
     li {
-    font-size: 14px;
+    font-size: 13px;
     float: left;    
     border-right: 1px solid #5d5d61;
     margin: 0px;
+    width: 24.75vw;
     }
 
     li a{
@@ -493,6 +499,14 @@ div p {
         margin-top: 50px;
         font-size: 15px;
     }
+
+    .block{
+        font-size: 12px;
+        margin-left: 2vw;
+        height: 30vh;
+
+}
+
 
     .portfolioParagraph{
     font-size: 12px;
@@ -553,7 +567,7 @@ div p {
     float: left;    
     border-right: 1px solid #5d5d61;
     margin: 0px;
-
+    width: 24.65vw;
     }
 
     h1 {
