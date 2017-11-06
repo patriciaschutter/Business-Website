@@ -1,279 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<link rel="stylesheet" type="text/css" href="cake&co.css">
 
-	<style type="text/css">
+    <link rel="stylesheet" type="text/css" href="cake&co.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <title>Order</title>
 
-
-	
-
-	form{
-			margin:0 auto;
-			margin-top: 200px;
-			width: 500px;
-			height: 550px;
-			background-color: white;
-			padding: 20px;
-			border: 4px solid #cecbcb ;
-			box-shadow: 10px 10px 5px #888888;
-		}
-	textarea{
-		resize: none;
-		margin: 10px;
-		width: 200px;
-		border: 1px solid #d8d8d8;
-	}
-	textarea:hover{
-		background-color: #d8d8d8;
-		border-color: black;
-		transition: all 0.40s;
-	}
-	.textinput{
-		border: 1px solid #d8d8d8;
-		margin: 10px;
-		width: 205px;
-	}
-
-	.textinput:hover{
-		background-color: #d8d8d8;
-		border-color: black;
-		transition: all 0.40s;
-	}
-	h3{
-		text-align: center;
-	}
-	select{
-		width: 205px;
-		margin: 10px;
-		border: #d8d8d8;
-
-
-	}
-	select:hover{
-		background-color: #d8d8d8;
-		border: solid 1px black;
-		transition: all 0.40s;
-	}
-
-	#radio{
-		margin: 10px;
-	}
-	.radio{
-		text-align: left;
-		padding-left: 10px;
-		
-	}
-
-	.submitbutton{
-		width: 205px;
-		margin: 10px;
-		text-align: center;
-		cursor: pointer;
-
-	}
-	.submitbutton:hover{
-		background-color:#d8d8d8;
-		border: solid 1px black;
-		transition: all 0.40s;
-	}
-	#search{
-		width: 300px;
-		padding: 7px;
-		border: 1px solid #607d8b;
-	}
-	#submit{
-
-		padding: 7px;
-		margin:-5px;
-		border: 1px solid #607d8b;
-		cursor: pointer;
-	}
-
-	#submit:hover{
-		background-color: #607d8b;
-		transition: all 0.40s
-	}
-
-
-	</style>
-	<script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous"></script>
-
-	<title>Order</title>
 </head>
-<body>
-	<nav>
-		<h3>
-			<ul>
-				<li class="tabs"><a href="homepage.html">HOME/LOGO</a></li>
-				<li class="tabs"><a href="aboutus.html">ABOUT US</a></li>
-				<li class="tabs"><a href="portfolio.html">PORTFOLIO</a></li>
-				<li class="tabs"><a href="orderlist.html">ORDER</a></li>
-			</ul>
-		</h3>
-	</nav>
+<body class='bodyOrderlist'>
+
+
 	<div class="navBarSpacing"></div>
-	<div>
+	<div class="navBarSpacing"></div>
+
+	<nav>
+		<ul>
+			<li class="tabs"><a href="homepage.html"><img class='logo' src="images/LOGO.jpg"></a></li>
+			<li class="tabs"><a href="aboutus.html">ABOUT US</a></li>
+			<li class="tabs"><a href="portfolio.html">PORTFOLIO</a></li>
+			<li class="tabs"><a href="orderlist.html">ORDER</a></li>
+		</ul>
+	</nav>
+
 	<form>
-	
-		
-		<h3 id="welcome">Order Your Cake</h3><hr>
-
-		<table>
-			<tr>
-				<td><label for="user">Name:</label></td>
-				<td "> <input class="textinput type="text" id="user" name="user"></td>
-
-			</tr>
-
-			<tr>
-				<td><label for="email">Email:</label></td>
-				<td > <input class="textinput" type="text" id="email" name="email"></td>
-
-			</tr>
-			<tr>
-				<td><label for="cakesort">Select your cake:</label></td>
-				<td>
-					<select id="cakesort" name="cakesort">
-					<option>Select your cake</option>
-					<option>ApplePie</option>
-					<option>Hazelnut</option>
-					<option>AppleCrumble</option>
-					<option>IceCake</option></td>
-					</select>
-			</tr>
-
-			<tr>
-				<td><label for="size">Select your cake size:</label></td>
-				<td>
-					<select id="size" name="size">
-					<option>Select your size</option>
-					<option>26 cm</option>
-					<option>30 cm</option>
-					<option>34 cm</option>
-					
-					</select>
-			</tr>
-			<tr>
-				<td><label for="form">Select your cake form:</label></td>
-				<td>
-					<select id="form" name="form">
-					<option>Select your form</option>
-					<option>circle</option>
-					<option>square</option>
-					<option>triangle</option>
-					
-					</select>
-			</tr>
-			<tr>
-				<td><label for="layers">Select amount of layers:</label></td>
-				<td>
-					<select id="layers" name="layers">
-					<option>Select amount of layers</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					</select>
-			</tr>
-
-
-			
-			<tr>
-				<td><label for="Wrapped">Wrapped:</label></td>
-				<td class="radio"> yes <input type="radio" name="Wrapped"> no <input id="radio" type="radio" name="Wrapped" checked="checked"> 
-
-			</tr>
-			
-			<tr>
-			<td><label for="textarea_01" >Extra Info:</label></td>
-			<td><textarea name="textarea_01" id="textarea_01" rows="5" cols="30"></textarea></td>
-			</tr>
-
-
-			<tr>
-				<td></td>
-				<td><button id="submit_01" class="submitbutton" type="" value="click to submit" name="submit_form">submit</button>	</td>
-			</tr>
-			
-
-		</table>
-
-		
-	</form>
-
-	</div>
-	<!--<form action="https://www.google.com">
-		<input type="text" placeholder="Search.." maxlength="20" id="search" name="">
-		<input type="submit" id=submit value="Go" name="">
-
-
-	</form>-->
-
-
-	<script type="text/javascript">
-	    $( document ).ready(function(){
+    
+        
+        <h3 id="welcome">Order Your Cake</h3><hr>
+        <table>
+            <tr>
+                <td><label for="user">Name:</label></td>
+                <td "> <input class="textinput type="text" id="user" name="user"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td > <input class="textinput" type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="cakesort">Select your cake:</label></td>
+                <td>
+                    <select id="cakesort" name="cakesort">
+                    <option>Select your cake</option>
+                    <option class="option" value="8">ApplePie 8$</option>
+                    <option class="option" value="9">Hazelnut 9$</option>
+                    <option class="option" value="6">AppleCrumble 6$</option>
+                    <option class="option" value="11">IceCake 11$</option></td>
+                    </select>
+            </tr>
+            <tr>
+                <td><label for="size">Select your cake size:</label></td>
+                <td>
+                    <select id="size" name="size">
+                    <option>Select your size</option>
+                    <option class="option" value="0">26 cm +0$</option>
+                    <option class="option" value="3">30 cm +3$</option>
+                    <option class="option" value="5">34 cm +5$</option>
+                    
+                    </select>
+            </tr>
+            <tr>
+                <td><label for="form">Select your cake form:</label></td>
+                <td>
+                    <select id="form" name="form">
+                    <option>Select your form</option>
+                    <option class="option" value="0">circle +0$</option>
+                    <option class="option" value="5">square +5$</option>
+                    <option class="option" value="10">triangle +10$</option>
+                    
+                    </select>
+            </tr>
+            <tr>
+                <td><label for="layers">Select amount of layers:</label></td>
+                <td>
+                    <select id="layers" name="layers">
+                    <option>Select amount of layers</option>
+                    <option class="option" value="1">1 +1$</option>
+                    <option class="option" value="2">2 +2$</option>
+                    <option class="option" value="3">3 +3$</option>
+                    <option class="option" value="4">4 +4$</option>
+                    <option class="option" value="5">5 +5$</option>
+                    <option class="option" value="6">6 +6$</option>
+                    </select>
+            </tr>
+            
+            <tr>
+                <td><label for="Wrapped">Wrapped:</label></td>
+                <td class="radio"> yes <input type="radio" name="Wrapped"> no <input id="radio" type="radio" name="Wrapped" checked="checked"> 
+            </tr>
+            
+            <tr>
+            <td><label for="textarea_01" >Extra Info:</label></td>
+            <td><textarea name="textarea_01" id="textarea_01" rows="5" cols="30"></textarea></td>
+            </tr>
+            
+            <tr>
+            <td><label for="total">Total:</label></td>
+            <td><div id="total" name="total">$0</div></td>  
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="submit_01" class="submitbutton" type="" value="click to submit" name="submit_form">submit</button>  </td>
+            </tr>
+            
+        </table>
+        
+    </form>
+    </div>
+    <!--<form action="https://www.google.com">
+        <input type="text" placeholder="Search.." maxlength="20" id="search" name="">
+        <input type="submit" id=submit value="Go" name="">
+    </form>-->
+    <script type="text/javascript">
+        $( document ).ready(function(){
      
-	     $("#submit_01").click(function(e){
-	     	e.preventDefault()
-	     	var user = $("#user").val()
-	     	var email = $("#email").val()
-	     	var cakesort = $( "#cakesort option:selected" ).text()
-	     	var size = $( "#size option:selected" ).text()
-	     	var form = $( "#form option:selected" ).text()
-	     	var layers = $( "#layers option:selected" ).text()
-	     	var textarea_01 = $("#textarea_01").val()
-	     	//console.log($('input[name=Wrapped]').val())
-
-	     	if (user.length == 0){alert("please fill in your name")}
-	     	else if (email.length == 0){
-	     		alert("please fill in your email")}
-	     	else if (cakesort == "Select your cake"){alert("please fill in your type of cake")}
-	     	else if (size == "Select your size"){alert("please fill in your cake size")}
-	     	else if (form == "Select your form"){alert("please fill in your cake form")}
-	     	else if (layers == "Select amount of layers"){alert("please fill in your amount of layers")}
-	     	else if (textarea_01 == 0){alert("please fill in your extra comments")}
-	     	else { $("#welcome").html("Thank you for your order " + $("#user").val() + ", an email will be sent to " + $("#email").val() + " for further details.")
-	     	}
-
-
-	     })
-	     	})
-	    	
-	   	;
-
-
-	   //	$("#welcome").html("you did not fill in your email")}
-
-
-
+         $("#submit_01").click(function(e){
+            e.preventDefault()
+            var user = $("#user").val()
+            var email = $("#email").val()
+            var cakesort = $( "#cakesort option:selected" ).text()
+            var size = $( "#size option:selected" ).text()
+            var form = $( "#form option:selected" ).text()
+            var layers = $( "#layers option:selected" ).text()
+            var textarea_01 = $("#textarea_01").val()
+            //console.log($('input[name=Wrapped]').val())
+            if (user.length == 0){alert("please fill in your name")}
+            else if (email.length == 0){
+                alert("please fill in your email")}
+            else if (cakesort == "Select your cake"){alert("please fill in your type of cake")}
+            else if (size == "Select your size"){alert("please fill in your cake size")}
+            else if (form == "Select your form"){alert("please fill in your cake form")}
+            else if (layers == "Select amount of layers"){alert("please fill in your amount of layers")}
+            else if (textarea_01 == 0){alert("please fill in your extra comments")}
+            else { $("#welcome").html("Thank you for your order " + $("#user").val() + ", an email will be sent to " + $("#email").val() + " for further details.")
+            }
+         })
+            })
+            
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("select").change(function(){
+                
+                var total = 0;
+                $(".option:selected").each(function(){
+                    total += parseInt($(this).val());
+                });
+                $("#total").html("$" + total)
+            });
+        });
+       //   $("#welcome").html("you did not fill in your email")}
 /*
-	     		&&email.length>0){$("#welcome").html("thank you for your order")}
-	     	else{$("#welcome").html("you missed a thingie")}
-	  */      
-
-	    //     console.log("submit reached")
-	        
-	    //     var x = document.getElementsByTagName("input")[0].value
-	    //     console.log(x)
-	        
-	    //     if (x === "bacon"){
-	    //         document.getElementById("welcome").innerHTML = "Thank you for your order"
-	    //     }
-	    //     else{
-	    //         document.getElementById("welcome").innerHTML = "you havent filled the complete form"
-	    //     }
-	    
+                &&email.length>0){$("#welcome").html("thank you for your order")}
+            else{$("#welcome").html("you missed a thingie")}
+      */      
+        //     console.log("submit reached")
+            
+        //     var x = document.getElementsByTagName("input")[0].value
+        //     console.log(x)
+            
+        //     if (x === "bacon"){
+        //         document.getElementById("welcome").innerHTML = "Thank you for your order"
+        //     }
+        //     else{
+        //         document.getElementById("welcome").innerHTML = "you havent filled the complete form"
+        //     }
+        
    
     
-	</script>
-
-
-
+    </script>
 </body>
 </html>
